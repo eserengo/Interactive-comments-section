@@ -1,0 +1,85 @@
+/*
+ Name: Interactive comments section.
+ Description: A Frontendmentor.io coding challenge.
+ Author: Federico Borzani
+ Author URL:  https://github.com/eserengo/
+*/
+
+@import "variables.css";
+
+:root {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0%;
+  margin: 0%;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.selectable:hover {
+  cursor: pointer;
+  user-select: all;
+}
+
+.disabled {
+  opacity: 5%;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.avatar {
+  width: 16px;
+  height: 16px;
+}
+
+.delete-modal {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--LightGray);
+}
+
+.edit-input,
+.reply-input {
+  width: 400px;
+  height: 100px;
+}
