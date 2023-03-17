@@ -24,62 +24,219 @@
 
 body {
   min-height: 100vh;
+  background-color: var(--LightGray);
 }
 
 ul, li {
   list-style-type: none;
 }
 
-.hidden {
-  display: none !important;
+textarea,
+textarea::placeholder {
+  font-family: "Rubik";
+  font-size: 100%;
+  font-weight: 400;
+  color: var(--GrayishBlue);
+  padding: 8px;
 }
 
-.selectable:hover {
-  cursor: pointer;
-  user-select: all;
+.main,
+.pop-up {
+  padding: 16px;
 }
 
-.disabled {
-  opacity: 5%;
+.container,
+.pop-up {
+  background-color: var(--White);
+  border-radius: 8px;
 }
 
-.disabled:hover {
-  cursor: not-allowed;
-  user-select: none;
+.comment,
+.main,
+.modal .flex-row {
+  gap: 16px;
 }
 
-.inline {
-  display: inline;
+.rep {
+  margin-left: 5%;
 }
 
-.rel {
-  position: relative;
+.comment-user,
+.rep .flex-row {
+  align-items: center;
 }
 
-.abs {
-  position: absolute;
-}
-
-.uppercase {
-  text-transform: uppercase;
+.flex-row,
+.flex-col {
+  gap: 8px;
 }
 
 .avatar {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
-.delete-modal {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100vw;
-  height: 100vh;
+.icon {
+  width: 16px;
+}
+
+.strong,
+.value {
+  font-weight: var(--FontBold);
+  color: var(--DarkBlue);
+}
+
+.button {
+  font-family: "Rubik";
+  font-size: 100%;
+  font-weight: 400;
+  border: none;
+  opacity: 75%;
+  border-radius: 8px;
+}
+
+.primary.button {
+  background-color: var(--ModerateBlue);
+  color: var(--White);
+}
+
+.primary.button:hover {
+  opacity: 100%;
+  box-shadow: 0px 2px 4px var(--ModerateBlue);
+}
+
+.send.button {
+  width: 96px;
+  height: 48px;
+  padding: 16px;
+}
+
+.update.button {
+  width: 128px;
+  height: 48px;
+  padding: 16px;
+}
+
+.secondary.button {
+  background-color: var(--VeryLightGray);
+  box-shadow: 0px 2px 4px var(--VeryLightGray);
+}
+
+.secondary.button:hover {
+  opacity: 100%;
+}
+
+.reply.button {
+  padding: 8px 16px;
+  width: 96px;
+  height: 32px;
+}
+
+.reply.button,
+.edit.button {
+  color: var(--ModerateBlue);
+}
+
+.delete.button {
+  color: var(--SoftRed);
+}
+
+.modal .button {
+  color: var(--White);
+  width: 160px;
+  height: 48px;
+  opacity: 75%;
+}
+
+.content,
+.current-user > p,
+.comment-user > p,
+.reply-user > p,
+.modal p {
+  color: var(--GrayishBlue);
+}
+
+.score {
   background-color: var(--LightGray);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.score .icon {
+  opacity: 50%;
+}
+
+.score .icon:hover {
+  opacity: 100%;
+}
+
+.badge {
+  background-color: var(--ModerateBlue);
+  color: var(--White);
+  border-radius: 4px;
+  padding: 4px;
 }
 
 .edit-input,
 .reply-input {
-  width: 400px;
-  height: 100px;
+  appearance: none;
+  outline: none;
+  border: 1px solid var(--ModerateBlue);
+  border-radius: 8px;
+}
+
+.modal {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Black-Opacity);
+}
+
+.modal strong,
+.modal p {
+  display: block;
+  text-align: left;
+  margin: 0px 0px 16px 0px;
+}
+
+.modal strong {
+  font-size: 120%;
+}
+
+.modal .abs.center {
+  background-color: var(--White);
+  border-radius: 16px;
+  padding: 5%;
+}
+
+.modal .button.cancel {
+  background-color: var(--DarkBlue);
+}
+
+.modal .button.cancel:hover {
+  opacity: 100%;
+  box-shadow: 0px 2px 4px var(--DarkBlue);
+}
+
+.modal .button.confirm {
+  background-color: var(--SoftRed);
+}
+
+.modal .button.confirm:hover {
+  opacity: 100%;
+  box-shadow: 0px 2px 4px var(--SoftRed);
+}
+
+.wrapper {
+  align-items: end;
+}
+
+
+.attribution {
+  display: block;
+  text-align: center;
+  font-size: 70%;
+  margin-top: 16px;
 }

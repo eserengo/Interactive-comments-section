@@ -1,0 +1,71 @@
+.hidden {
+  display: none !important;
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.selectable:hover {
+  cursor: pointer;
+  user-select: all;
+}
+
+.disabled {
+  opacity: 5%;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.flex-row.center,
+.flex-col.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.abs.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

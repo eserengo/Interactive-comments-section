@@ -1,1 +1,53 @@
 @import "variables.css";
+
+body {
+  min-width: 600px;
+}
+
+.main {
+  max-width: 900px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 60% 30%;
+  grid-template-rows: 1fr 2fr;
+  gap: 8px;
+  padding: 16px;
+}
+
+.elem-1 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.elem-2,
+.wrapper {
+  grid-row: 2;
+  grid-column: 2 / span 2;
+}
+
+.elem-3 {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+}
+
+.elem-4 {
+  grid-row: 1;
+  grid-column: 3;
+  gap: 16px;
+}
+
+.score.flex-col {
+  align-items: center;
+  height: 72px;
+  width: 32px;
+}
+
+.score.flex-col > p {
+  text-align: center;
+}
+
+.modal .button {
+  padding: 16px;
+}
